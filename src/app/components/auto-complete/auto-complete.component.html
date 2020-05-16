@@ -1,0 +1,16 @@
+<form>
+    <mat-form-field>
+        <input matInput
+            #inputCtrl
+            data-testctl="autcompinput"
+            placeholder="Test"
+            [matAutocomplete]="auto"
+            [formControl]="testInputCtrl">
+        <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let item of autoCompleteArray" [value]="item.name">
+                {{item.name}}
+            </mat-option>
+        </mat-autocomplete>
+    </mat-form-field>
+</form>
+<input data-testctl="checkbox" type="checkbox" (change)="changeControlState()">使えなくする
