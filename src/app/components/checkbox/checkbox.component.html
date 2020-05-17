@@ -1,0 +1,12 @@
+<div>
+    <mat-checkbox (change)="changeState($event)">CheckBox1(InputDisabled)</mat-checkbox>
+</div>
+<div>
+    <mat-checkbox #checkbox2>CheckBox2(DisabledTarget)</mat-checkbox>
+</div>
+<div>
+    <input [formControl]="testInputCtrl" data-testctl="targetinput">
+</div>
+<div>
+    <button (click)="buttonClick()" data-testctl="disabledbutton">CheckBox2 Disabled</button>
+</div>

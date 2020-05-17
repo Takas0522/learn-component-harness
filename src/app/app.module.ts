@@ -8,12 +8,14 @@ import { BlankPageComponent } from './components/blank-page/blank-page.component
 import { AutoCompleteComponent } from './components/auto-complete/auto-complete.component';
 import { MaterialModule } from './material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CheckboxComponent } from './components/checkbox/checkbox.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BlankPageComponent,
-    AutoCompleteComponent
+    AutoCompleteComponent,
+    CheckboxComponent
   ],
   imports: [
     BrowserModule,
